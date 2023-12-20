@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - In Bio</title>
+
+    <!-- flat-icon css  -->
+    <link rel="shortcut icon" href="assets/img/ud-favicon-color.png" type="image/x-icon">
+
+    <!-- font-awesome css  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- fonts css  -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+
+    <!-- Bootstrap link  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- custom link  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- media css  -->
+    <link rel="stylesheet" href="assets/css/media.css">
+</head>
+
+<body>
+
+    <div class="website">
+        <button class="btn rounded-circle position-fixed" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+            style="position:absolute; border:1px solid #575757; border-radius: 50%; right:50px; top:50px;"><i
+                class="fa-solid fa-bars text-white"></i></button>
+
+        <div class="offcanvas offcanvas-end" style="z-index: 9999;" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+
+            <div class="offcanvas-body bg-dark">
+                <h3 class="text-gray fs-20" style="margin: 30px 0 0 50px;">Menu</h3>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: 30px 0 0 40px; text-align: left;">
+                    <li class="nav-iteme">
+                        <a class="nav-link active text-white" aria-current="page" href="#home"><i
+                                class="fa-solid fa-house px-2 text-green"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#about"><i class="fa-solid fa-user px-2 "></i>About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#eduction"><i class="fa-solid fa-briefcase px-2"></i>Eduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#services"><i
+                                class="fa-solid fa-bars-staggered px-2"></i>Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#skills"><i class="fa-solid fa-shapes px-2"></i>Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#portfolio"><i
+                                class="fa-solid fa-grip-vertical px-2"></i>portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#pricing"><i class="fa-solid fa-dollar-sign px-2"></i>pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact"><i class="fa-solid fa-envelope px-2"></i>contact</a>
+                    </li>
+                </ul>
+
+                <h2 class="text-gray fs-20" style="margin: 50px 0 0 50px;">Social</h2>
+
+                <div class="icon text-gray p-2 py-4">
+                    <ul class="d-flex align-items-center">
+                        <li>
+                            <a href="#" class="active" aria-current="page"><i
+                                    class="fa-brands fa-instagram px-2"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter px-2"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-basketball px-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="dmenu scroll-nav d-none d-xxl-flex" style="position: fixed; top:140px; right: 30px; ">
+            <ul>
+                <li>
+                    <a href="#home" class="scroll-to active ">
+                        <!-- <span>Home</span> -->
+                        <i class="fa-solid fa-house py-2"></i>
+                    </a>
+                    <a href="#about">
+                        <!-- <span class="scroll-to text-gray">About</span> -->
+                        <i class="fa-solid fa-user py-2 "></i>
+                    </a>
+                    <a href="#eduction">
+                        <!-- <span class="scroll-to text-gray">Eduction</span> -->
+                        <i class="fa-solid fa-briefcase py-2 text-gray"></i>
+                    </a>
+                    <a href="#services">
+                        <!-- <span classs="croll-to text-gray">services</span> -->
+                        <i class="fa-solid fa-bars-staggered py-2 text-gray"></i>
+                    </a>
+                    <a href="#skills">
+                        <!-- <span classs="croll-to text-gray">Skills</span> -->
+                        <i class="fa-solid fa-shapes py-2 text-gray"></i>
+                    </a>
+                    <a href="#portfolio">
+                        <!-- <span classs="croll-to text-gray">portfolio</span>  -->
+                        <i class="fa-solid fa-grip-vertical py-2 text-gray"></i>
+                    </a>
+                    <a href="#pricing">
+                        <!-- <span classs="croll-to text-gray">pricing</span> -->
+                        <i class="fa-solid fa-dollar-sign py-2 text-gray"></i>
+                    </a>
+                    <a href="#contact">
+                        <!-- <span classs="croll-to text-gray">contact</span> -->
+                        <i class="fa-solid fa-envelope py-2 text-gray"></i>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <section>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-4 position-sm-relative  card-box-1">
+                        <div class="col-450 profile-card border border-gray " style="margin-top: 100px; margin-left: 30px; 
+                    padding: 50px; height: auto;  border-radius: 25px;">
+
+                            <div class="profile-header d-flex align-items-center justify-content-between"
+                                style="margin-bottom: 30px;">
+                                <img src="assets/img/logo.png" alt="" style="width: 200px;">
+                                <p class="fs-14 text-white fw-400 inter mt-2">Full Stack <br><span
+                                        class="text-green">Developer</span> </p>
+                            </div>
+
+                            <img src="assets/img/123.jpg" alt="" style="width: 100%; max-width: 220px; margin-left: auto;
+                        margin-right: auto; margin-bottom: 40px; border-radius: 30px; display: block;">
+
+                            <h2 class="email fs-24 text-white fw-300 text-center">hello@Umesh.design</h2>
+                            <h2 class="address fs-24 text-white fw-300 text-center">Based in Surat , India</h2>
+                            <p class="copiright fs-14 text-center text-gray"
+                                style="margin: 15px 0; padding: 0!important;">©
+                                2022 Umesh. All Rights Reserved</p>
+                            <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                                <li>
+                                    <a href="#" class="active"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                                </li>
+                            </ul>
+                            <a href="#" class="theme-btn fw-600"><i class="fa-solid fa-envelope"></i> HIRE ME</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-8 ms-auto">
+                        <section class="profile-area" id="home" style=" padding:100px 0 50px 0;">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="section-header">
+                                        <h4 class="fw-400 text-white fs-13"><i class="fa-solid fa-house px-2"></i>
+                                            introduce</h4>
+                                        <h1 class="fs-78 fw-300 pt-5" style=" top: 50px;">
+                                            Say Hi from
+                                            <span class="text-green">Umesh</span>
+                                            , <br>Full Stack Developer
+                                        </h1>
+                                        <p class="text-gray fs-16 fw-500">I design
+                                            and code beautifully simple things and i love what i do.
+                                            Just simple like that!</p>
+
+                                        <a href="#portfolio" style="width: 175px; height: 175px;
+                                    display: flex; align-items: center; justify-content: center; margin-left: auto;
+                                    border-radius: 50%; border: 1px solid #575757; position: relative;
+                                    overflow: hidden; margin-left: 30%;">
+                                            <img src="assets/img/round-text.png" alt="">
+                                            <i class="fa-solid fa-arrow-down" style="position: absolute; color: #fff;
+                                     font-size: 40px; display: block;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="about-area" id="about" style="padding-bottom: 50px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7 d-flex">
+                                        <div class="about">
+                                            <h4 class="fw-400 text-white fs-13"><i class="fa-solid fa-user px-2"></i>
+                                                About
+                                                me
+                                            </h4>
+
+                                            <div class="about-content " style="padding-top: 70px; ">
+                                                <h2 class="text-green fw-500 fs-30 ">Hello ,I'm Umesh Dholakiya, Based
+                                                    in
+                                                    India
+                                                </h2>
+                                                <p class="text-gray fw-400 fs-16  ">I am a Full Stack developer. I can
+                                                    provide clean code and pixel perfect design. I also make website
+                                                    more &
+                                                    more interactive
+                                                    with web animations.</p>
+                                                <div class="details row  mb-2">
+                                                    <ul class="col-12 col-md-6">
+                                                        <li class="py-2">
+                                                            <span class="text-green">Name </span>
+                                                            <span class="px-1 fw-500">: Umesh Dholakiya</span>
+                                                        </li>
+                                                        <li class="py-2">
+                                                            <span class="text-green">Phone </span>
+                                                            <span class="px-1 fw-500">: +91 884-952-2577</span>
+                                                        </li>
+                                                        <li class="py-2">
+                                                            <span class="text-green">Date of Birth </span>
+                                                            <span class="px-1 fw-500">: 12-02-2003 </span>
+                                                        </li>
+                                                        <li class="py-2">
+                                                            <span class="text-green">Email </span>
+                                                            <span class="px-1 fw-500">: dholakiyaumesh45@gmail.com
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="col-12 col-md-6">
+                                                        <li class="py-2">
+                                                            <span class="text-green">Nationality </span>
+                                                            <span class="px-1 fw-500">: Indian </span>
+                                                        </li>
+                                                        <li class="py-2">
+                                                            <span class="text-green">Address </span>
+                                                            <span class="px-1 fw-500">: Surat</span>
+                                                        </li>
+                                                        <li class="py-2">
+                                                            <span class="text-green">Work Status </span>
+                                                            <span class="px-1 fw-500">: Full Stack Developer </span>
+                                                        </li>
+                                                        <li class="py-2">
+                                                            <span class="text-green">Languages </span>
+                                                            <span class="px-1 fw-500">: English , Gujrati , Hindi</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <a href="RESUME.pdf" download="" class="theme-btn2 p-3 fw-700"
+                                                    style=" border-radius: 10px;"> <i
+                                                        class="fa-solid fa-cloud-arrow-down pe-2"></i>Download
+                                                    My CV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="eduction" id="eduction"
+                            style="padding-bottom: 30px; transform: translate(0px, 0px);">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="eduction-content content-width">
+                                            <div class="eduction-header">
+                                                <h4 class="fw-400 text-white fs-13"><i
+                                                        class="fa-solid fa-briefcase px-2"></i>Eduction
+                                                </h4>
+                                                <h1 class="fs-48 fw-400 "
+                                                    style=" padding-top: 50px; padding-bottom: 30px;">
+                                                    Education &
+                                                    <span class="text-green">Qualification
+                                                    </span>
+                                                </h1>
+                                            </div>
+                                            <div class="eduction-timeline ps-5 position-relative">
+                                                <div class="item1 pb-5">
+                                                    <span class="date fs-20 fw-600"
+                                                        style="display: block; margin-bottom: 15px; transition: .3s;">2023
+                                                        -
+                                                        present</span>
+                                                    <h2 class="fs-24 fw-300 text-white">MASTER IN FULL STACK DEVELOPER
+                                                        (--)
+                                                    </h2>
+                                                    <p class="fs-13 text-gray">RED AND WHITE MULTIMEDIA EDUCTION -MOTA
+                                                        VARACHCHA SURAT
+                                                    </p>
+                                                </div>
+                                                <div class="item2 pb-5">
+                                                    <span class="date fs-20 fw-600"
+                                                        style="display: block; margin-bottom: 15px; transition: .3s;">2020
+                                                        -
+                                                        2023</span>
+                                                    <h2 class="fs-24 fw-300 text-white">BACHELOR OF SCIENCE ( STATISTICS
+                                                        - 65% )</h2>
+                                                    <p class="fs-13 text-gray">SIR P.P. INSTITUTE OF SCIENCE - BHAVNAGAR
+                                                    </p>
+                                                </div>
+                                                <div class="item3 pb-5">
+                                                    <span class="date fs-20 fw-600"
+                                                        style="display: block; margin-bottom: 15px; transition: .3s; ">2018
+                                                        -
+                                                        2020</span>
+                                                    <h2 class="fs-24 fw-300 text-white">
+                                                        HIGHER SECONDARY
+                                                        CERTIFICATE ( 12th SCIENCE - 61% ) </h2>
+                                                    <p class="fs-13 text-gray">GYANMANDIR VIDHYAPITH - BOTAD</p>
+                                                </div>
+                                                <div class="item4 pb-5">
+                                                    <span class="date fs-20 fw-600"
+                                                        style="display: block; margin-bottom: 15px; transition: .3s; ">2016
+                                                        -
+                                                        2018</span>
+                                                    <h2 class="fs-24 fw-300 text-white">
+                                                        SECONDARY SCHOOL
+                                                        CERTIFICATE ( 10th STANDARD - 61% ) </h2>
+                                                    <p class="fs-13 text-gray">M.K.GANDHI VIDHYALAYA -BOTAD</p>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                        <section class="service-area" id="services" style="padding-bottom: 50px; opacity: 1;">
+                            <div class="container">
+                                <div class="row col-12">
+                                    <div class="resume-content content-width">
+                                        <div class="service-header">
+                                            <h4 class="fw-400 text-white fs-13"><i
+                                                    class="fa-solid fa-bars-staggered px-2"></i>services</h4>
+                                            <h1 class="fs-48 fw-400 " style=" padding-top: 50px; padding-bottom: 30px;">
+                                                My
+                                                <span class="text-green">Specializations</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div class="services-items">
+                                        <div class="services-item mb-5">
+                                            <i class="fa-solid fa-bezier-curve" style="position: absolute; font-size: 30px;
+                                     color: #28E98C; top: 30px;  right: 35px;"></i>
+                                            <h2 class="fs-24 fw-300 text-white" style="margin-bottom: 8px;">Website
+                                                Design
+                                            </h2>
+                                            <p class="fs-14 text-gray" style="margin-bottom: 30px;">I created digital
+                                                products with
+                                                unique ideas
+                                                use Figma & Framer</p>
+                                            <span class="projects fs-12 text-white "
+                                                style="display: inline-block; text-decoration: underline;">24
+                                                Projects</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="services-items">
+                                        <div class="services-item mb-5">
+                                            <i class="fa-solid fa-code" style="position: absolute;   font-size: 30px;
+                                    color: #28E98C; top: 30px;  right: 35px;"></i>
+                                            <h2 class="fs-24 fw-300 text-white" style="margin-bottom: 8px;">Development
+                                            </h2>
+                                            <p class="fs-14 text-gray" style="margin-bottom: 30px;">I build website go
+                                                live
+                                                with
+                                                Framer, Webflow
+                                                or WordPress</p>
+                                            <span class="projects fs-12 text-white " style="display: inline-block;">126
+                                                PROJECTS</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="services-items">
+                                        <div class="services-item mb-5">
+                                            <i class="fa-solid fa-rocket" style="position: absolute;   font-size: 30px;
+                                    color: #28E98C; top: 30px;  right: 35px;"></i>
+                                            <h2 class="fs-24 fw-300 text-white" style="margin-bottom: 8px;">
+                                                SEO/Marketing
+                                            </h2>
+                                            <p class="fs-14 text-gray" style="margin-bottom: 30px;">
+                                                Increase the traffic for your website with SEO optimized</p>
+                                            <span class="projects fs-12 text-white " style="display: inline-block;">8
+                                                PROJECTS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="skills-area" id="skills" style="margin-bottom: 50px; opacity: 1;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="skills-content content-width">
+                                        <div class="skills-header">
+                                            <h4 class="fw-400 text-white fs-13"><i
+                                                    class="fa-solid fa-shapes px-2"></i>MY
+                                                SKILLS
+                                            </h4>
+                                            <h1 class="fs-48 fw-400 " style=" padding-top: 50px; padding-bottom: 30px;">
+                                                My
+                                                <span class="text-green">Advantages</span>
+                                            </h1>
+                                        </div>
+
+                                        <div class=" skills text-center">
+                                            <div class="row justify-content-center justify-content-lg-start">
+
+                                                <div class="skill__item col-6 col-md-6 col-lg-3">
+                                                    <img src="assets/img/html-5.png" alt="">
+                                                    <div class="percentange">98%</div>
+                                                    <p class="title">HTML-5</p>
+                                                </div>
+                                                <div class="skill__item col-6 col-md-6 col-lg-3">
+                                                    <img src="assets/img/css-3.png" alt="" style="width: 50px;">
+                                                    <div class="percentange">80%</div>
+                                                    <p class="title">CSS</p>
+                                                </div>
+                                                <div class="skill__item col-6 col-md-6 col-lg-3">
+                                                    <img src="assets/img/bootstrap.png" alt="" style="width: 50px;">
+                                                    <div class="percentange">85%</div>
+                                                    <p class="title">Bootstrap</p>
+                                                </div>
+                                                <div class="skill__item col-6 col-md-6 col-lg-3">
+                                                    <img src="assets/img/js.png" alt="" style="width: 50px;">
+                                                    <div class="percentange">85%</div>
+                                                    <p class="title">JAVASCRIPT</p>
+                                                </div>
+                                                <div class="skill__item col-6 col-md-6 col-lg-3">
+                                                    <img src="assets/img/physics.png" alt="" style="width: 50px;">
+                                                    <div class="percentange">73%</div>
+                                                    <p class="title">REACT</p>
+                                                </div>
+                                                <div class="skill__item col-6 col-md-6 col-lg-3">
+                                                    <img src="assets/img/node-js.png" alt="" style="width: 50px;">
+                                                    <div class="percentange">80%</div>
+                                                    <p class="title">NODE JS</p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section class="portfolio" id="portfolio" style="padding-bottom: 50px; opacity: 1;">
+                            <div class="container">
+                                <div class="row col-12">
+                                    <div class="testimonial-content content-width">
+                                        <div class="testimonial-header">
+                                            <h4 class="fw-400 text-white fs-13">
+                                                <i class="fa-solid fa-grip-vertical px-2"></i>portfolio
+                                            </h4>
+                                            <h1 class="fs-48 fw-400 " style=" padding-top: 50px; padding-bottom: 30px;">
+                                                Featured <span class="text-green">Projects</span>
+                                            </h1>
+                                        </div>
+                                        <div class="portfolio-img row-cols-12">
+                                            <div class="port-img mb-4">
+                                                <a href="">
+                                                    <img src="assets/img/rasoi.png" alt="" width="80%">
+                                                </a>
+                                            </div>
+                                            <div class="port-img mb-4">
+                                                <a href="#">
+                                                    <img src="assets/img/extra.png" alt="" width="80%">
+                                                </a>
+                                            </div>
+                                            <div class="port-img mb-4">
+                                                <a href="#">
+                                                    <img src="assets/img/admin-pannel.png" alt="" width="80%">
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <a href="#" class="theme-btn fs-16 m-0 fw-600">Load More Works <i
+                                                        class="fa-solid fa-arrow-right px-2"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+                        <section class="contact-area" id="contact" style="padding-bottom: 30px; opacity: 1;">
+                            <div class="container">
+                                <div class="row col-12">
+                                    <div class="contact-content content-width">
+                                        <div class="contact-header">
+                                            <h4 class="fw-400 text-white fs-13"><i
+                                                    class="fa-solid fa-envelope px-2"></i>contact
+                                            </h4>
+                                            <h1 class="fs-48 fw-400 " style=" padding-top: 50px; padding-bottom: 30px;">
+                                                Let's
+                                                Work
+                                                <span class="text-green">Together!</span>
+                                            </h1>
+                                        </div>
+                                        <h3 class="fs-24 text-whitefw-300" style="margin-bottom: 60px;">
+                                            hello@Umesh.design
+                                        </h3>
+                                    </div>
+
+                                    <div class="contact-content-1">
+                                        <div class="contact-form">
+
+                                            <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                                <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" style="color: #0f5132; background-color: #d1e7dd;
+                                                border-color: #badbcc">
+                                                  <div class="toast-header">
+                                                    <img src="..." class="rounded me-2" alt="...">
+                                                    <strong class="me-auto">Contact</strong>
+                                                    <small>1 mins ago</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="toast-body">
+                                                    Your message was sent successfully.
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              
+                                            <form class="row" style="outline: none;">
+                                                <div class="col-md-4 mb-5 me-5">
+                                                <label for="text" class="form-label ms-2">Full Name</label>
+                                                <input type="text" class="form-control bg-black m-0"
+                                                        placeholder="Enter Your Full Name" aria-label="First name" style="border: none;">
+                                                </div>
+
+                                                <div class="col-md-4 mb-5 me-5">
+                                                    <label for="inputEmail4" class="form-label ms-2">Email</label>
+                                                    <input type="email" class="form-control bg-black" id="inputEmail4"
+                                                        placeholder="Enter Your Email Address" style="border: none;">
+                                                </div>
+
+                                                <div class="col-md-4 mb-5  me-5">
+                                                    <label for="exampleFormControlTextarea1" class="form-label ms-2"> Mobile
+                                                        Number</label>
+                                                    <input type="tel" class="form-control bg-black" id="inputEmail4"
+                                                        placeholder="Enter Your Mobile Number" style="border: none;">
+                                                </div>
+
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="exampleFormControlTextarea1" class="form-label ms-2">
+                                                        Massage</label>
+                                                    <textarea class="form-control bg-black" id="exampleFormControlTextarea1"
+                                                        rows="3" placeholder="Enter Your Massage" style="border: none;"></textarea>
+                                                </div>
+
+                                                <div class="col-md-3 mb-5">
+                                                    <input type="file" class="form-control bg-black text-white" id="inputGroupFile02" style="border: none;">
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="button" class="btn theme-btn m-0" id="liveToastBtn">Send Massaget</button>
+                                                  
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <section class="top-btn">
+                        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                    </section>
+
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Top-btn script  -->
+    <script>
+        $(".top-btn").click(function () {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1000)
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 100) {
+                $(".top-btn").fadeIn(1000);
+            }
+            else {
+                $(".top-btn").fadeOut(1000);
+            }
+        });
+    </script>
+
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', () => {
+                const toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+    </script>
+
+</html>

@@ -1,0 +1,22 @@
+
+@media(max-width:575px) {
+
+   
+   
+}
+
+@media(min-width:768px) {
+ 
+}
+
+@media(min-width:992px) {
+    
+}  
+
+@media(min-width:1200px) {
+    .card-box-1{
+        position: fixed;
+        left: 0;
+       
+    }
+}    
